@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery test</title>
+  <link rel="stylesheet" type="text/css" hreflang=""href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#hide-btn").click(function() {
+        $(".hidethis").hide();
+      });
+      $("#show-btn").click(function() {
+        $(".hidethis").show();
+      });
+      $("#toggle-btn").click(function() {
+        $(".togglethis").toggle();
+      });
+      $("#sup-btn").click(function() {
+        $(".slidetext1").slideUp();
+      });
+      $("#sdown-btn").click(function() {
+        $(".slidetext1").slideDown();
+      });
+      $("#stoggle-btn").click(function() {
+        $(".slidetext2").slideToggle();
+      });
+      $("#blue-btn").click(function() {
+        $("#bluethis").addClass("blue");
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Let's try some jQuery!</h1>
+  </header>
+  <section>
+    <h1>Hide</h1>
+    <div>
+      <button id="hide-btn">Hide</button>
+      <p class="hidethis">Click the button to hide this text!</p>
+    </div>
+  </section>
+  <section>
+    <h1>Show</h1>
+    <div>
+      <button id="show-btn">Show</button>
+      <p>Click to show the above line again.</p>
+    </div>
+  </section>
+  <section>
+    <h1>Toggle</h1>
+    <div>
+      <button id="toggle-btn">Toggle</button>
+      <p class="togglethis">Toggle this text!</p>
+    </div>
+  </section>
+  <section>
+    <h1>SlideUp</h1>
+    <div>
+      <button id="sup-btn">SlideUp</button>
+      <p class="slidetext1">Slide this text up!</p>
+    </div>
+  </section>
+  <section>
+    <h1>SlideDown</h1>
+    <div>
+      <button id="sdown-btn">SlideUp</button>
+      <p>Slide the above text down again!</p>
+    </div>
+  </section>
+  <section>
+    <h1>SlideToggle</h1>
+    <div>
+      <button id="stoggle-btn">SlideToggle</button>
+      <p class="slidetext2">Slide this text up and down!</p>
+    </div>
+  </section>
+  <section>
+    <h1>AddClass</h1>
+    <div>
+      <button id="blue-btn">AddClass</button>
+      <p id="bluethis">Click to add the class "blue" to this paragraph.</p>
+    </div>
+  </section>
+</body>
+</html>

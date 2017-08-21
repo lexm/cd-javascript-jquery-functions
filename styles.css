@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  /*outline: 1px dotted red;*/
+}
+body{
+  /*font-family: Arial Helvetica sans-serif;*/
+  width: 950px;
+}
+h1, button, p{
+  font-family: Arial, Helvetica, "sans-serif";
+}
+header h1{
+  text-align: center;
+  color: blue;
+}
+.blue{
+  color: blue;
+}
+section{
+  margin: 10px 50px;
+  padding: 10px 10px;
+}
+section h1{
+  text-align: center;
+  font-size: 25px;
+}
+section div > *{
+  display: inline-block;
+}
+button{
+  font-size: 20px;
+}
+section p{
+  margin-left: 50px;
+  font-size: 18px;
+  vertical-align: middle;
+}
