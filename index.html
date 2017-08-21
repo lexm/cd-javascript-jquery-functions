@@ -28,6 +28,12 @@
       $("#blue-btn").click(function() {
         $("#bluethis").addClass("blue");
       });
+      $("#fadein-btn").click(function() {
+        $(".greenbox").fadeIn();
+      });
+      $("#fadeout-btn").click(function() {
+        $(".purplebox").fadeOut();
+      });
     });
   </script>
 </head>
@@ -66,9 +72,36 @@
   <section>
     <h1>SlideDown</h1>
     <div>
-      <button id="sdown-btn">SlideUp</button>
+      <button id="sdown-btn">SlideDown</button>
       <p>Slide the above text down again!</p>
     </div>
+  </section>
+  <section>
+    <h1>SlideToggle</h1>
+    <div>
+      <button id="stoggle-btn">SlideToggle</button>
+      <p class="slidetext2">Slide this text up and down!</p>
+    </div>
+  </section>
+  <section>
+    <div class="leftside">
+      <h1>FadeIn</h1>
+      <div>
+        <button id="fadein-btn">FadeIn</button>
+        <p>Fade in the green box.</p>
+      </div>
+    </div>
+    <div class="greenbox"></div>
+  </section>
+  <section>
+    <div class="leftside">
+      <h1>FadeOut</h1>
+      <div>
+        <button id="fadeout-btn">FadeOut</button>
+        <p>Fade out the purple box.</p>
+      </div>
+    </div>
+    <div class="purplebox"></div>
   </section>
   <section>
     <h1>SlideToggle</h1>
